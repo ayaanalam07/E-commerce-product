@@ -1,0 +1,12 @@
+.img{
+    width: 40%;
+    margin-left: 80px;
+}
+.parent{
+    background-color: #ffff9e;
+}
+
+button{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
