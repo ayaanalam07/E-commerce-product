@@ -1,7 +1,7 @@
 const div = document.querySelector("#div");
 
 
-axios('https://fakestoreapi.com/products')
+axios('https://jsonplaceholder.typicode.com/users')
 .then((res)=>{
     
     console.log(res.data)
@@ -9,14 +9,17 @@ axios('https://fakestoreapi.com/products')
         div.innerHTML +=`
         
       
-      <div class="card border border-dark border-redius rounded" style="width: 18rem;">
-      <img src="${item.image}" class="img mt-2 p-3" alt="image">
-      <div class="card-body parent">
-        <h5 class="card-title">Title: ${item.title}</h5>
-        <p class="card-text">Category: ${item.category}</p>
-        <h3>Price: ${item.price}</h3>
-      </div>
+      <div class="card bg-base-100 border border-black w-96 shadow-xl">
+  <div class="card-body">
+    <h2 class="card-title">Name: ${item.name}</h2>
+        <h2 class="card-title">Username: ${item.username}</h2>
+    <p>Email: ${item.email}</p>
+        <p>Phone: ${item.phone}</p>
+        <p>Website: ${item.website}</p>
+    <div class="card-actions justify-end">
     </div>
+  </div>
+</div>
       
         
        `
